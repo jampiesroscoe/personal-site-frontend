@@ -8,6 +8,6 @@ export class SpacePicsService {
   constructor(private httpClient: HttpClient) { }
 
   getSpacePics(){
-    return this.httpClient.get(`http://localhost:3000/space-pics`);
+    return this.httpClient.get(`https://personal-site-backend-7ymq6.ondigitalocean.app/space-pics`);
   }
 }
