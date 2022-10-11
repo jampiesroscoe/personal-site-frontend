@@ -1,7 +1,12 @@
-<h1>Space Fun</h1><br>
+<div class="jumbotron">
+    <hr class="my-4">
+    <h1>Space Fun</h1>
+    <hr class="my-4">
+</div>
+
 <div class="container">
     <div *ngFor="let item of spacePics" class="card">
-        <img class="card-img-top" src="{{item.hdurl}}">
+        <img class="card-img-top" src="{{item.url}}">
         <div class="card-body">
             <h5 class="card-title">
                 {{item.title}}
@@ -9,7 +14,7 @@
             <p class="card-text">
                 {{item.explanation}}
             </p>
-            <a href="{{item.url}}" large>See full HD picture</a>
+            <a href="{{item.hdurl}}" large>See full HD picture</a>
         </div>
 
     </div>
